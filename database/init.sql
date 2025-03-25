@@ -1,0 +1,28 @@
+CREATE TABLE IF NOT EXISTS regions (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  code VARCHAR(10) NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS products (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  category VARCHAR(100) NOT NULL,
+  price DECIMAL(10, 2) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS sales (
+  id SERIAL PRIMARY KEY,
+  product_id INTEGER REFERENCES products(id),
+  region_id INTEGER REFERENCES regions(id),
+  quantity INTEGER NOT NULL,
+  total_amount DECIMAL(12, 2) NOT NULL,
+  date DATE NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS performance_metrics (
+  id SERIAL PRIMARY KEY,
+  metric_name VARCHAR(100) NOT NULL,
+  metric_value DECIMAL(10, 2) NOT NULL,
+  date DATE NOT NULL
+); 

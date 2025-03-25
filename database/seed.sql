@@ -1,0 +1,81 @@
+-- Insertion des régions
+INSERT INTO regions (name, code) VALUES
+('Europe', 'EU'),
+('North America', 'NA'),
+('Asia', 'AS'),
+('Africa', 'AF'),
+('South America', 'SA');
+
+-- Insertion des produits
+INSERT INTO products (name, category, price) VALUES
+('Laptop Pro', 'Electronics', 1299.99),
+('Smartphone X', 'Electronics', 899.99),
+('Office Chair', 'Furniture', 199.99),
+('Desk Lamp', 'Furniture', 49.99),
+('Coffee Maker', 'Appliances', 89.99);
+
+-- Insertion des ventes (données sur 12 mois)
+INSERT INTO sales (product_id, region_id, quantity, total_amount, date) VALUES
+(1, 1, 150, 194998.50, '2023-01-15'),
+(1, 2, 200, 259998.00, '2023-01-20'),
+(2, 1, 300, 269997.00, '2023-02-05'),
+(3, 3, 100, 19999.00, '2023-02-15'),
+(4, 2, 250, 12497.50, '2023-03-10'),
+(5, 4, 180, 16198.20, '2023-03-22'),
+(2, 5, 220, 197997.80, '2023-04-05'),
+(3, 1, 120, 23998.80, '2023-04-18'),
+(1, 3, 175, 227498.25, '2023-05-10'),
+(4, 4, 300, 14997.00, '2023-05-25'),
+(5, 2, 400, 35996.00, '2023-06-08'),
+(2, 3, 250, 224997.50, '2023-06-20'),
+(3, 5, 150, 29998.50, '2023-07-12'),
+(4, 1, 280, 13997.20, '2023-07-28'),
+(1, 4, 190, 246998.10, '2023-08-05'),
+(5, 3, 220, 19797.80, '2023-08-17'),
+(2, 2, 310, 278996.90, '2023-09-03'),
+(3, 4, 130, 25998.70, '2023-09-22'),
+(4, 5, 210, 10497.90, '2023-10-11'),
+(1, 1, 205, 266497.95, '2023-10-29'),
+(5, 2, 260, 23397.40, '2023-11-08'),
+(2, 3, 290, 260997.10, '2023-11-25'),
+(3, 1, 110, 21998.90, '2023-12-10'),
+(4, 4, 320, 15996.80, '2023-12-27');
+
+-- Insertion des métriques de performance
+INSERT INTO performance_metrics (metric_name, metric_value, date) VALUES
+('Conversion Rate', 3.5, '2023-01-01'),
+('Cart Abandonment', 25.2, '2023-01-01'),
+('Average Order Value', 120.5, '2023-01-01'),
+('Conversion Rate', 3.8, '2023-02-01'),
+('Cart Abandonment', 23.5, '2023-02-01'),
+('Average Order Value', 125.2, '2023-02-01'),
+('Conversion Rate', 4.1, '2023-03-01'),
+('Cart Abandonment', 22.8, '2023-03-01'),
+('Average Order Value', 130.0, '2023-03-01'),
+('Conversion Rate', 4.3, '2023-04-01'),
+('Cart Abandonment', 21.5, '2023-04-01'),
+('Average Order Value', 135.5, '2023-04-01'),
+('Conversion Rate', 4.5, '2023-05-01'),
+('Cart Abandonment', 20.9, '2023-05-01'),
+('Average Order Value', 138.2, '2023-05-01'),
+('Conversion Rate', 4.7, '2023-06-01'),
+('Cart Abandonment', 19.8, '2023-06-01'),
+('Average Order Value', 142.1, '2023-06-01'),
+('Conversion Rate', 4.9, '2023-07-01'),
+('Cart Abandonment', 19.2, '2023-07-01'),
+('Average Order Value', 145.8, '2023-07-01'),
+('Conversion Rate', 5.0, '2023-08-01'),
+('Cart Abandonment', 18.5, '2023-08-01'),
+('Average Order Value', 150.2, '2023-08-01'),
+('Conversion Rate', 5.2, '2023-09-01'),
+('Cart Abandonment', 17.9, '2023-09-01'),
+('Average Order Value', 155.0, '2023-09-01'),
+('Conversion Rate', 5.5, '2023-10-01'),
+('Cart Abandonment', 17.2, '2023-10-01'),
+('Average Order Value', 160.5, '2023-10-01'),
+('Conversion Rate', 5.7, '2023-11-01'),
+('Cart Abandonment', 16.8, '2023-11-01'),
+('Average Order Value', 165.2, '2023-11-01'),
+('Conversion Rate', 6.0, '2023-12-01'),
+('Cart Abandonment', 16.0, '2023-12-01'),
+('Average Order Value', 170.0, '2023-12-01'); 
