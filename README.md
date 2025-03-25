@@ -10,7 +10,6 @@ Ce projet est composé de trois conteneurs Docker distincts :
 2. **Backend** (Node.js/Express) : API RESTful pour servir les données
 3. **Base de données** (PostgreSQL) : Stockage des données analytiques
 
-![Architecture](https://mermaid.ink/img/pako:eNp9kUFrwzAMhf-K0GmFldILPYxRaHMYtNdRfHCdNQY7CbYzRkn--5zsrltH0UWg9_S9J3NCbRwiBbTvbTwYbT136G3H1uBBfO0QfHbH6fCZm1ZZfJCtkZ4oSmvf6XUxE7unHUUURlIhXVv9UQ-bZknV-k9VOV1X_d-Dh-Bsx8a6OA6V_7IIx6woxQ-oFNGzzcB1DtPjwzpVfxk95kxQwU1j3rCL5Qdpvw0DKhh1GimHuukVpHt2bPhgMpDFTJA6V0ASI6PpXtRQHNEjZXFTuuGSHXLAKmU9wlxySNc-D6cLMl_g2QGKC6YZEcWoZyxXS8cK9mI7xSnDfgkx02n6I6dJcxI?type=png)
 
 ## Prérequis
 
@@ -86,7 +85,3 @@ Schéma de base de données :
 - Table des produits
 - Table des ventes
 - Table des métriques de performance
-
-## Licence
-
-MIT 
